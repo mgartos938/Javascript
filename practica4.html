@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Conversor de pesetas a euros</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var importe_pesetas;
+      var importe_euros;
+      //variables siempre con minusculas, si no interpreta que es constante. Se usa _, no .
+      importe_pesetas=prompt("Introduce el valor en pesetas",1) //valor por defecto
+      if (importe_pesetas>0) {
+        importe_euros=importe_pesetas/166.386;
+        alert("Importe en euros: "+importe_euros);
+      }
+      else {
+        alert("Valor erróneo");
+      }
+    </script>
+  </body>
+</html>
